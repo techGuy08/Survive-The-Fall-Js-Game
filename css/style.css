@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+canvas {
+  border: 1px solid #000;
+  display: block;
+  margin: 20px auto;
+  background: rgb(66, 98, 119)
+    url("https://image.freepik.com/free-vector/sky-day-game-background_7814-306.jpg");
+  background-size: cover;
+}
+.game_wrapper {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.game_wrapper .modal {
+  max-width: 280px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.game_wrapper .modal.active {
+  display: flex;
+}
+.game_wrapper .modal .game-over {
+  display: none;
+}
+.modal.ended .game-start {
+  display: none;
+}
+.modal.ended .game-over {
+  display: block;
+}
+.game_wrapper .modal-content {
+  width: 100%;
+  padding: 20px;
+  background: rgb(18, 115, 194);
+  margin: 0 20px;
+  border-radius: 3px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 2;
+  opacity: 0.8;
+}
+.game_wrapper .modal.ended .modal-content {
+  background: rgb(197, 34, 69);
+  opacity: 1;
+}
+.game_wrapper p {
+  font-weight: bold;
+  font-size: 24;
+}
+#adviceMsg {
+  font-size: 14px;
+  font-weight: normal;
+}
+.game-start h2 {
+  font-size: 25px;
+  text-shadow: 0 0 10px black;
+}
+.btn-start {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 3px;
+  background: rgb(15, 88, 148);
+  color: #fff;
+  border: 1px solid #333;
+  margin-top: 20px;
+  display: inline-block;
+}
+.btn-rest {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 3px;
+  background: rgb(117, 31, 49);
+  color: #fff;
+  border: 1px solid #333;
+  margin-top: 20px;
+  display: inline-block;
+}
+#instructions {
+  font-size: 14px;
+  font-weight: normal;
+}
